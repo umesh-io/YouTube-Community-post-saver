@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+@layer base {
+  html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+
+  @media screen and (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1536px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+}
+
+/* Rest of your existing CSS variables */
